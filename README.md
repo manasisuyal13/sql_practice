@@ -1,26 +1,33 @@
-# SQL Practice Journey 🚀
-
-
+# 📊 SQL Learning Journey
 ---
 
 ## 📅 Day 1: Basics & Sorting
-**Key Learning:** How to retrieve and organize data.
-
-* **Queries:** `SELECT`, `FROM`, `WHERE`.
-* **Operators:** Filtering data using `=` and `!=`.
-* **Sorting:** Using `ORDER BY` with `ASC` (ascending) and `DESC` (descending).
-* **Multi-Level Logic:** Sorting by multiple columns (e.g., Country first, then Score).
+**Key Concepts:**
+* **Basic Retrieval:** Using `SELECT` and `FROM`.
+* **Filtering:** Using `WHERE` with operators like `=` and `!=`.
+* **Sorting:** Using `ORDER BY` with `ASC` (default) and `DESC` (highest first).
+* **Multi-Sorting:** Prioritizing sorts by listing multiple columns (e.g., Country then Score).
 
 ---
 
-## 📅 Day 2: Aggregations & Logic
-**Key Learning:** Summarizing data and logical execution flow.
+## 📅 Day 2: Aggregations, Logic & Execution
+**Key Concepts:**
+* **Static Values:** Selecting strings and numbers directly (e.g., `SELECT 'hello'`).
+* **Aggregate Functions:** `SUM()`, `AVG()`, and `COUNT()`.
+* **Grouping:** Using `GROUP BY` to summarize data per category.
+* **Having vs. Where:** `WHERE` filters rows; `HAVING` filters aggregated groups.
+* **Refining:** `DISTINCT` for unique lists and `TOP` for limiting results.
 
-* **Aggregates:** `SUM()`, `AVG()`, `COUNT()`.
-* **Grouping:** `GROUP BY` to calculate totals per category (e.g., Score by Country).
-* **Advanced Filtering:** Using `HAVING` to filter grouped data (since `WHERE` only works on rows).
-* **Refining Results:** `DISTINCT` for unique values and `TOP` to limit row counts.
-* **Execution Order:** Learning that SQL processes queries in a specific order, not just top-to-bottom.
+### ⚙️ SQL Execution Order
+Understanding the difference between **Coding Order** and **Execution Order** is crucial for debugging complex queries:
 
-### 🧠 SQL Execution Order
-1. `FROM` 2. `WHERE` 3. `GROUP BY` 4. `HAVING` 5. `SELECT` 6. `DISTINCT` 7. `ORDER BY` 8. `TOP`
+
+
+1. `FROM` (Source data)
+2. `WHERE` (Filter rows)
+3. `GROUP BY` (Group rows)
+4. `HAVING` (Filter groups)
+5. `SELECT` (Choose columns)
+6. `DISTINCT` (Remove duplicates)
+7. `ORDER BY` (Sort results)
+8. `TOP` (Limit final rows)
