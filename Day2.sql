@@ -1,3 +1,6 @@
+SELECT 'hello' AS static_string 
+SELECT 123 AS static_number --We can add any static variables in sql
+
 SELECT 
 first_name, 
 AVG(score) AS average
